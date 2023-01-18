@@ -1,0 +1,65 @@
+
+body{
+    font-family: Arial;
+    font-size: 18px;
+    background-image: url("img/4.jpg");
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.5);
+    /*background-size: cover;*/
+}
+.profile img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+.spin{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: 100ms;
+    animation: linear;
+    animation-name: spin;
+    animation-duration: 1s;
+}
+.spin span{
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+.saf{
+    position: relative;
+    top: 12px;
+    right: 0;
+}
+.col-12 i{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+@keyframes spin {
+    0%{
+        border-color:transparent;
+
+    }
+    25%{
+        border-left: transparent;
+        border-bottom: transparent;
+        border-right: transparent;
+    }
+    50%{
+        border-left: transparent;
+        border-bottom: transparent;
+    }
+    75%{
+        border-left: transparent;
+    }
+    100%{
+        border-color: black;
+    }
+}
